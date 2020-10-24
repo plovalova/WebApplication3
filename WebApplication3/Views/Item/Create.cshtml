@@ -1,0 +1,14 @@
+﻿@model WebApplication3.Models.Item
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Item</h2>
+
+<h3>Calculating the area of a square</h3>
+
+<form asp-action="create">
+    Size of square:
+    <input asp-for="Side" />
+    <button type="submit">Calculate</button>
+</form>

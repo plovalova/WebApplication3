@@ -1,0 +1,16 @@
+﻿@model List<WebApplication3.Models.Item>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Midterm</h1>
+
+<a asp-action="create">Add item</a>
+
+<ul>
+    @foreach (var item in Model)
+    {
+
+        <li>Area of square: @item.Side<a asp-action="delete" asp-route-id="@item.Id"> delete</a></li>
+    }
+</ul>
